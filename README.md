@@ -44,3 +44,7 @@ It describes:
 3. Performance 
     - Application must be as quick as possible. 
     - Notification should be instant so as to robust the app use.
+### Activity Diagram
+Activity diagram below shows an user workflow of the application starting from authentication to different activity.
+
+![Activity Diagram](img/activity-diagram.png)
