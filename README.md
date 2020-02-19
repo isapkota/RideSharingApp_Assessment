@@ -46,7 +46,7 @@ It describes:
     - Notification should be instant so as to robust the app use.
 
 ## Use Case Table
-![Use Case Diagram](img/use-case.png)
+![Use Case Diagram](imgages/use-case.png)
 ### Use Case Description
 #### Authentication 
 Both type of user admin and normal has to be authenticated through the system. Normal user has to register with his/her email address or phone number and need to be verified before logging in to the system
@@ -82,14 +82,14 @@ Normal user can view chat history and search message on the history. Admin can m
 ### Activity Diagram
 Activity diagram below shows an user workflow of the application starting from authentication to different activity.
 
-![Activity Diagram](img/activity-diagram.png)
+![Activity Diagram](images/activity-diagram.png)
 
 [Note: Other diagram specific to different activity in the application can be displayed and explained if necessary]
 
 ### Entity Relationship Diagram
 ER-Diagram below displays the relation between data entity required for the applications. It just explains the database entities involved. 
 
-![ER-Diagram](img/basic-erdiagram.png)
+![ER-Diagram](images/basic-erdiagram.png)
 
 ## Architecture
 ### Architecture Overview
@@ -101,13 +101,13 @@ Physically we can have three different server for database, api and web applicat
 ### Logical Architecture Overview
 Logically application has three basic components one is api server *'API Component'* which is called *'API'* below. build with ASP.NET MVC Web API architecture. API stores and receives the data from another component *'Database Component'* which is called *'Data'* below. 'API' receives the request from web application and responds back to the web application which is third component called *'Web Component'* which is called *'Web App'*.
 
-![Application Workflow](img/application-workflow.png)
+![Application Workflow](images/application-workflow.png)
 #### API Component
 'API' is responsible for communicating with 'Web App' for saving and receiving data. There must not be other way out to save and retrieve data except 'API'. 'API' consists of two layers 'Data Layer' and 'Controller' where controller is responsible for handling request and response from 'Web App' where as data layer is responsible for handling (saving and receiving) data from database. 'API' should be made secure so as to block the unnecessary access to the data, basic authentication using username and password can be used for API security but to make more secure OAuth 2.0 can be used.The process can be easily be understood in the above 'Application Work Flow' diagram.
 
 Class Diagram for Data layer of the 'API' can be shown as below.
 
-![Class Diagram](img/class-diagram.png)
+![Class Diagram](images/class-diagram.png)
 
 
 #### Database Component
