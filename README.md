@@ -46,7 +46,7 @@ It describes:
     - Notification should be instant so as to robust the app use.
 
 ## Use Case Table
-![Use Case Diagram](imgages/use-case.png)
+![Use Case Diagram](images/use-case.png)
 ### Use Case Description
 #### Authentication 
 Both type of user admin and normal has to be authenticated through the system. Normal user has to register with his/her email address or phone number and need to be verified before logging in to the system
